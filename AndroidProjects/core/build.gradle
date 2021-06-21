@@ -1,0 +1,13 @@
+sourceCompatibility = 1.7
+dependencies {
+
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.7.0'
+    testImplementation 'junit:junit:4.12'
+    //implementation 'org.junit.jupiter:junit-jupiter'
+    //implementation 'org.testng:testng:6.9.6'
+}
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+sourceSets.main.java.srcDirs = [ "src/" ]
+
+eclipse.project.name = appName + "-core"
